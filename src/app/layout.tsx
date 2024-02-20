@@ -3,6 +3,7 @@ import { ReactNode } from 'react'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import StyledComponentsRegistry from '@lib/registry'
+import Header from '@components/header/Header'
 
 type Props = {
   children: ReactNode
@@ -20,6 +21,7 @@ const RootLayout = ({ children }: Props) => {
     <html lang='en'>
       <body className={inter.className}>
         <StyledComponentsRegistry>
+          <Header />
           <main>{children}</main>
         </StyledComponentsRegistry>
       </body>

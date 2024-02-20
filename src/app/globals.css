@@ -3,3 +3,37 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --background: #101522;
+  --border-radius: 0.25rem;
+  --spacing: 2rem;
+  --box-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
+  --header-height: 80px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background: var(--background);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
