@@ -1,5 +1,9 @@
 # Landing Page
 
+## Description
+
+Landing Page built with NextJS
+
 ## Technologies
 
 - Language: **TypeScript**
