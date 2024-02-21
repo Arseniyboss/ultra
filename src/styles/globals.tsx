@@ -1,5 +1,6 @@
 'use client'
 
+import { breakpoints } from '@breakpoints'
 import styled from 'styled-components'
 
 export const Container = styled.main`
@@ -7,6 +8,16 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   padding-bottom: var(--spacing);
+
+  > :nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  @media screen and (max-width: ${breakpoints.home}) {
+    > :nth-child(even) {
+      flex-direction: column;
+    }
+  }
 `
 
 export const InvisibleButton = styled.button`

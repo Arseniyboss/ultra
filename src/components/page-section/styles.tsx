@@ -5,14 +5,13 @@ import Image from 'next/image'
 import { breakpoints } from '@breakpoints'
 
 export const Container = styled.div`
+  min-height: calc(100vh - (var(--header-height)));
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex: inherit;
-  padding: 0 5rem;
 
   @media screen and (max-width: ${breakpoints.home}) {
-    flex: initial;
+    min-height: initial;
     flex-direction: column;
     gap: var(--spacing);
     padding: var(--spacing);

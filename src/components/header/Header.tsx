@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { Container, HeaderLogo, HeaderIconContainer, NavLinks } from './styles'
@@ -20,25 +19,31 @@ const Header = () => {
       <HeaderLogo>Ultra</HeaderLogo>
       <HeaderIconContainer
         onClick={isMobileNavbarOpen ? closeMobileNav : openMobileNav}
+        aria-expanded={isMobileNavbarOpen}
+        aria-label={
+          isMobileNavbarOpen
+            ? 'close mobile navigation'
+            : 'open mobile navigation'
+        }
       >
         {isMobileNavbarOpen ? <FaTimes /> : <FaBars />}
       </HeaderIconContainer>
       <nav>
         <NavLinks $isMobileNavbarOpen={isMobileNavbarOpen}>
           <li>
-            <Link href='/' onClick={closeMobileNav}>
+            <a href='#home' onClick={closeMobileNav}>
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href='/services' onClick={closeMobileNav}>
+            <a href='#onboarding' onClick={closeMobileNav}>
+              Onboarding
+            </a>
+          </li>
+          <li>
+            <a href='#services' onClick={closeMobileNav}>
               Services
-            </Link>
-          </li>
-          <li>
-            <Link href='/products' onClick={closeMobileNav}>
-              Products
-            </Link>
+            </a>
           </li>
         </NavLinks>
       </nav>

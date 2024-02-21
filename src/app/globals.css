@@ -12,6 +12,11 @@
   --header-height: 80px;
 }
 
+html {
+  scroll-padding-top: var(--header-height);
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   display: flex;
