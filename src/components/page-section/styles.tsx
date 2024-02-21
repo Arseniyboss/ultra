@@ -15,7 +15,6 @@ export const Container = styled.div`
     flex-direction: column;
     gap: var(--spacing);
     padding: var(--spacing);
-    padding-bottom: 0;
   }
 `
 

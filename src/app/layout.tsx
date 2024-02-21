@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import { Container } from '@styles/globals'
 import StyledComponentsRegistry from '@lib/registry'
 import Header from '@components/header/Header'
+import Footer from '@components/footer/Footer'
 
 type Props = {
   children: ReactNode
@@ -24,6 +25,7 @@ const RootLayout = ({ children }: Props) => {
         <StyledComponentsRegistry>
           <Header />
           <Container>{children}</Container>
+          <Footer />
         </StyledComponentsRegistry>
       </body>
     </html>

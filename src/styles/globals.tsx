@@ -7,7 +7,6 @@ export const Container = styled.main`
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: var(--spacing);
 
   > :nth-child(even) {
     flex-direction: row-reverse;

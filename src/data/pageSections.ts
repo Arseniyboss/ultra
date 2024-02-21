@@ -1,3 +1,5 @@
+import { PageSection } from '@types'
+
 const pageSections: PageSection[] = [
   {
     id: 'home',

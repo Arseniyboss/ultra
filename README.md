@@ -1,8 +1,9 @@
-# NextJS Starter Template
+# Landing Page
 
 ## Technologies
 
 - Language: **TypeScript**
+- Framework: **NextJS**
 - Styling: **Styled Components**
 
 ## Commands
