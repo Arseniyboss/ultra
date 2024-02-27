@@ -2,7 +2,6 @@ import './globals.css'
 import { ReactNode } from 'react'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Container } from '@styles/globals'
 import StyledComponentsRegistry from '@lib/registry'
 import Header from '@components/header/Header'
 import Footer from '@components/footer/Footer'
@@ -24,7 +23,7 @@ const RootLayout = ({ children }: Props) => {
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <Header />
-          <Container>{children}</Container>
+          <main>{children}</main>
           <Footer />
         </StyledComponentsRegistry>
       </body>

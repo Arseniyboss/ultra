@@ -1,25 +1,23 @@
 'use client'
 
-import { breakpoints } from '@breakpoints'
 import styled from 'styled-components'
+import { breakpoints } from '@breakpoints'
 
-export const Container = styled.main`
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
+export const Button = styled.button`
+  --lightness: 40%;
+  background: hsl(240, 100%, var(--lightness));
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.8rem 4rem;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
 
-  > :nth-child(even) {
-    flex-direction: row-reverse;
+  &:hover {
+    --lightness: 35%;
   }
 
   @media screen and (max-width: ${breakpoints.home}) {
-    > :nth-child(even) {
-      flex-direction: column;
-    }
+    width: 100%;
   }
-`
-
-export const InvisibleButton = styled.button`
-  background: none;
-  color: inherit;
 `

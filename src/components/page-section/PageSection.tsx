@@ -1,14 +1,15 @@
 import { PageSection as Props } from '@types'
-import { Container, InfoSection, Button, HeroImage } from './styles'
+import { Button } from '@styles/globals'
+import { SectionContainer, SectionDetails, HeroImage } from './styles'
 
 const PageSection = ({ id, heading, description, buttonLabel, img }: Props) => {
   return (
-    <Container id={id}>
-      <InfoSection aria-label={`${id} section`}>
+    <SectionContainer id={id} aria-label={`${id} section`}>
+      <SectionDetails>
         <h1>{heading}</h1>
         <p>{description}</p>
         <Button>{buttonLabel}</Button>
-      </InfoSection>
+      </SectionDetails>
       <HeroImage
         src={img.src}
         alt=''
@@ -16,7 +17,7 @@ const PageSection = ({ id, heading, description, buttonLabel, img }: Props) => {
         height={img.height}
         priority
       />
-    </Container>
+    </SectionContainer>
   )
 }
 

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { breakpoints } from '@breakpoints'
-import { InvisibleButton } from '@styles/globals'
 
 type Props = {
   $isMobileNavbarOpen: boolean
@@ -23,8 +22,10 @@ export const HeaderLogo = styled.p`
   font-size: 2rem;
 `
 
-export const HeaderIconContainer = styled(InvisibleButton)`
+export const HeaderIconContainer = styled.button`
   display: none;
+  background: none;
+  color: inherit;
 
   @media screen and (max-width: ${breakpoints.mobileNav}) {
     position: absolute;

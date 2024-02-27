@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { Container, HeaderLogo, HeaderIconContainer, NavLinks } from './styles'
+import navLinks from '@data/navLinks'
 
 const Header = () => {
   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false)
@@ -30,21 +31,13 @@ const Header = () => {
       </HeaderIconContainer>
       <nav>
         <NavLinks $isMobileNavbarOpen={isMobileNavbarOpen}>
-          <li>
-            <a href='#home' onClick={closeMobileNav}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href='#onboarding' onClick={closeMobileNav}>
-              Onboarding
-            </a>
-          </li>
-          <li>
-            <a href='#services' onClick={closeMobileNav}>
-              Services
-            </a>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <a href={link.href} onClick={closeMobileNav}>
+                {link.label}
+              </a>
+            </li>
+          ))}
         </NavLinks>
       </nav>
     </Container>

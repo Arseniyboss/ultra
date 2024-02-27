@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import { breakpoints } from '@breakpoints'
 
-export const Container = styled.div`
+export const SectionContainer = styled.section`
   min-height: calc(100vh - (var(--header-height)));
   display: flex;
   justify-content: space-around;
@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 `
 
-export const InfoSection = styled.section`
+export const SectionDetails = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -27,25 +27,6 @@ export const InfoSection = styled.section`
 
   h1 {
     font-size: 2.3rem;
-  }
-`
-
-export const Button = styled.button`
-  --lightness: 40%;
-  background: hsl(240, 100%, var(--lightness));
-  color: white;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 0.8rem 4rem;
-  border-radius: var(--border-radius);
-  transition: all 0.3s ease;
-
-  &:hover {
-    --lightness: 35%;
-  }
-
-  @media screen and (max-width: ${breakpoints.home}) {
-    width: 100%;
   }
 `
 

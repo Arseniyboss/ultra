@@ -1,3 +1,9 @@
+export type NavLink = {
+  id: number
+  label: string
+  href: string
+}
+
 export type Image = {
   src: string
   width: number
@@ -15,4 +21,11 @@ export type PageSection = {
 export type FooterSection = {
   title: string
   links: string[]
+}
+
+export type PricingPlan = {
+  id: number
+  heading: string
+  price: number
+  features: string[]
 }
