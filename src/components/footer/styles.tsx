@@ -22,6 +22,10 @@ export const SectionContainer = styled.section`
   @media screen and (max-width: 500px) {
     gap: var(--spacing);
   }
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.9rem;
+  }
 `
 
 export const Copyright = styled.p`

@@ -32,7 +32,7 @@ export const CardContainer = styled.div`
   gap: 3rem;
 
   @media screen and (max-width: ${breakpoints.home}) {
-    width: 85vw;
+    width: 88vw;
     flex-direction: column;
     gap: var(--spacing);
   }

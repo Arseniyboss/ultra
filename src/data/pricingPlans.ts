@@ -33,7 +33,7 @@ const pricingPlans: PricingPlan[] = [
       'SEO',
       'Video Production',
       'Content Creation',
-      'Conversion Rate Optimization',
+      'CRO',
       'Filtered Analytics View',
     ],
   },

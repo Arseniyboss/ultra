@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { breakpoints } from '@breakpoints'
 
 export const SectionContainer = styled.section`
-  min-height: calc(100vh - (var(--header-height)));
+  min-height: 700px;
   display: flex;
   justify-content: space-around;
   align-items: center;
