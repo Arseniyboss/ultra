@@ -26,6 +26,10 @@ export const SectionContainer = styled.section`
   @media screen and (max-width: 400px) {
     font-size: 0.9rem;
   }
+
+  @media screen and (max-width: 350px) {
+    font-size: 0.8rem;
+  }
 `
 
 export const Copyright = styled.p`
