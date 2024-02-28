@@ -8,7 +8,7 @@ export const Button = styled.button`
   background: hsl(240, 100%, var(--lightness));
   color: white;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.8rem 4rem;
   border-radius: var(--border-radius);
   transition: all 0.3s ease;
