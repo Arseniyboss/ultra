@@ -1,5 +1,5 @@
-import { PageSection as Props } from '@types'
-import { Button } from '@styles/globals'
+import { PageSection as Props } from '@/types'
+import { Button } from '@/styles/globals'
 import { SectionContainer, SectionDetails, HeroImage } from './styles'
 
 const PageSection = ({ id, heading, description, buttonLabel, img }: Props) => {

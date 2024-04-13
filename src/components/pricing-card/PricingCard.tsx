@@ -1,7 +1,7 @@
 import { FaCheck } from 'react-icons/fa'
-import { Button } from '@styles/globals'
+import { Button } from '@/styles/globals'
 import { CardContainer, PlanPrice, FeatureList, PlanFeature } from './styles'
-import { PricingPlan as Props } from '@types'
+import { PricingPlan as Props } from '@/types'
 
 const PricingCard = ({ heading, price, features }: Props) => {
   return (

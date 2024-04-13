@@ -1,6 +1,6 @@
 import { SectionContainer, Copyright } from './styles'
-import FooterSection from '@components/footer/section/FooterSection'
-import footerSections from '@data/footerSections'
+import FooterSection from '@/components/footer/section/FooterSection'
+import footerSections from '@/data/footerSections'
 
 const Footer = () => {
   return (

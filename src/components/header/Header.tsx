@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { Container, HeaderLogo, HeaderIconContainer, NavLinks } from './styles'
-import navLinks from '@data/navLinks'
+import navLinks from '@/data/navLinks'
 
 const Header = () => {
   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false)

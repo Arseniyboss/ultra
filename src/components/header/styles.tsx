@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoints } from '@breakpoints'
+import { breakpoints } from '@/breakpoints'
 
 type Props = {
   $isMobileNavbarOpen: boolean

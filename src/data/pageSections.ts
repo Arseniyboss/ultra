@@ -1,4 +1,4 @@
-import { PageSection } from '@types'
+import { PageSection } from '@/types'
 
 const pageSections: PageSection[] = [
   {

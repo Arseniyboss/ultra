@@ -2,7 +2,7 @@
 
 import styled from 'styled-components'
 import Image from 'next/image'
-import { breakpoints } from '@breakpoints'
+import { breakpoints } from '@/breakpoints'
 
 export const SectionContainer = styled.section`
   min-height: 700px;

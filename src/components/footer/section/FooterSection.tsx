@@ -1,4 +1,4 @@
-import { FooterSection as Props } from '@types'
+import { FooterSection as Props } from '@/types'
 import { FooterLinks } from './styles'
 import Link from 'next/link'
 

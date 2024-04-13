@@ -1,7 +1,7 @@
-import PageSection from '@components/page-section/PageSection'
-import PricingCard from '@components/pricing-card/PricingCard'
-import pageSections from '@data/pageSections'
-import pricingPlans from '@data/pricingPlans'
+import PageSection from '@/components/page-section/PageSection'
+import PricingCard from '@/components/pricing-card/PricingCard'
+import pageSections from '@/data/pageSections'
+import pricingPlans from '@/data/pricingPlans'
 import { PageSectionContainer, PricingSection, CardContainer } from './styles'
 
 const Home = () => {

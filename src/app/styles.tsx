@@ -1,8 +1,8 @@
 'use client'
 
 import styled from 'styled-components'
-import { SectionContainer } from '@components/page-section/styles'
-import { breakpoints } from '@breakpoints'
+import { SectionContainer } from '@/components/page-section/styles'
+import { breakpoints } from '@/breakpoints'
 
 export const PageSectionContainer = styled.div`
   > :nth-child(even) {
