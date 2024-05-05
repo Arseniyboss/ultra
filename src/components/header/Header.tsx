@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
-import { Container, HeaderLogo, HeaderIconContainer, NavLinks } from './styles'
+import { Container, HeaderIconContainer, NavLinks } from './styles'
 import navLinks from '@/data/navLinks'
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
   }
   return (
     <Container $isMobileNavbarOpen={isMobileNavbarOpen}>
-      <HeaderLogo>Ultra</HeaderLogo>
+      <p>Ultra</p>
       <HeaderIconContainer
         onClick={isMobileNavbarOpen ? closeMobileNav : openMobileNav}
         aria-expanded={isMobileNavbarOpen}
