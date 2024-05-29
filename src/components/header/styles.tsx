@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { breakpoints } from '@/breakpoints'
 
 type Props = {
-  $isMobileNavbarOpen: boolean
+  $isMobileNavOpen: boolean
 }
 
 export const Container = styled.header<Props>`
@@ -53,6 +53,6 @@ export const NavLinks = styled.ul<Props>`
     height: calc(100vh - (var(--header-height)));
     top: var(--header-height);
     background: var(--background);
-    display: ${({ $isMobileNavbarOpen }) => !$isMobileNavbarOpen && 'none'};
+    display: ${({ $isMobileNavOpen }) => !$isMobileNavOpen && 'none'};
   }
 `

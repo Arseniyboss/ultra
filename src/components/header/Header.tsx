@@ -6,34 +6,26 @@ import { Container, HeaderIconContainer, NavLinks } from './styles'
 import navLinks from '@/data/navLinks'
 
 const Header = () => {
-  const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false)
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
-  const openMobileNav = () => {
-    setIsMobileNavbarOpen(true)
-  }
-
-  const closeMobileNav = () => {
-    setIsMobileNavbarOpen(false)
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen)
   }
   return (
-    <Container $isMobileNavbarOpen={isMobileNavbarOpen}>
+    <Container $isMobileNavOpen={isMobileNavOpen}>
       <p>Ultra</p>
       <HeaderIconContainer
-        onClick={isMobileNavbarOpen ? closeMobileNav : openMobileNav}
-        aria-expanded={isMobileNavbarOpen}
-        aria-label={
-          isMobileNavbarOpen
-            ? 'close mobile navigation'
-            : 'open mobile navigation'
-        }
+        onClick={toggleMobileNav}
+        aria-expanded={isMobileNavOpen}
+        aria-label='toggle mobile navigation'
       >
-        {isMobileNavbarOpen ? <FaTimes /> : <FaBars />}
+        {isMobileNavOpen ? <FaTimes /> : <FaBars />}
       </HeaderIconContainer>
       <nav>
-        <NavLinks $isMobileNavbarOpen={isMobileNavbarOpen}>
+        <NavLinks $isMobileNavOpen={isMobileNavOpen}>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={link.href} onClick={closeMobileNav}>
+              <a href={link.href} onClick={toggleMobileNav}>
                 {link.label}
               </a>
             </li>
