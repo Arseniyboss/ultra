@@ -50,7 +50,7 @@ export const NavLinks = styled.ul<Props>`
     gap: 2rem;
     padding-top: 1.5rem;
     width: 100%;
-    height: calc(100vh - (var(--header-height)));
+    height: var(--section-height);
     top: var(--header-height);
     background: var(--background);
     display: ${({ $isMobileNavOpen }) => !$isMobileNavOpen && 'none'};
