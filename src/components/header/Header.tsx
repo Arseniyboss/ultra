@@ -11,6 +11,10 @@ const Header = () => {
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen)
   }
+
+  const closeMobileNav = () => {
+    setIsMobileNavOpen(false)
+  }
   return (
     <Container>
       <p>Ultra</p>
@@ -25,7 +29,7 @@ const Header = () => {
         <NavLinks $isMobileNavOpen={isMobileNavOpen}>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={link.href} onClick={toggleMobileNav}>
+              <a href={link.href} onClick={closeMobileNav}>
                 {link.label}
               </a>
             </li>
