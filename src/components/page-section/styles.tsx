@@ -10,11 +10,19 @@ export const SectionContainer = styled.section`
   justify-content: space-around;
   align-items: center;
 
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
   @media screen and (max-width: ${breakpoints.home}) {
     min-height: initial;
     flex-direction: column;
     gap: var(--spacing);
     padding: var(--spacing);
+
+    &:nth-of-type(even) {
+      flex-direction: column;
+    }
   }
 `
 

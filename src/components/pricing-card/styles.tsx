@@ -21,7 +21,7 @@ export const PlanPrice = styled.p`
   font-weight: bold;
 `
 
-export const FeatureList = styled.ul`
+export const FeatureWrapper = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1rem;

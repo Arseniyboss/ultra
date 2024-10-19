@@ -2,7 +2,7 @@
 
 import styled from 'styled-components'
 
-export const FooterLinks = styled.ul`
+export const LinkWrapper = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

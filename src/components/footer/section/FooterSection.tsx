@@ -1,18 +1,18 @@
 import { FooterSection as Props } from '@/types'
-import { FooterLinks } from './styles'
+import { LinkWrapper } from './styles'
 import Link from 'next/link'
 
 const FooterSection = ({ title, links }: Props) => {
   return (
     <article>
       <h2>{title}</h2>
-      <FooterLinks>
+      <LinkWrapper>
         {links.map((link, index) => (
           <li key={index}>
             <Link href='/'>{link}</Link>
           </li>
         ))}
-      </FooterLinks>
+      </LinkWrapper>
     </article>
   )
 }

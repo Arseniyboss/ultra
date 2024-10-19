@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 import { breakpoints } from '@/breakpoints'
 
-export const Container = styled.footer`
+export const FooterContainer = styled.footer`
   margin-top: 7rem;
 
   @media screen and (max-width: ${breakpoints.home}) {
@@ -11,7 +11,7 @@ export const Container = styled.footer`
   }
 `
 
-export const SectionContainer = styled.section`
+export const SectionWrapper = styled.section`
   display: flex;
   justify-content: center;
   column-gap: 5rem;

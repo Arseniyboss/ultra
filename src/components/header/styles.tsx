@@ -5,7 +5,7 @@ type Props = {
   $isMobileNavOpen: boolean
 }
 
-export const Container = styled.header`
+export const HeaderContainer = styled.header`
   background: var(--background);
   color: white;
   display: flex;
@@ -37,7 +37,7 @@ export const HeaderIconContainer = styled.button`
   }
 `
 
-export const NavLinks = styled.ul<Props>`
+export const LinkWrapper = styled.ul<Props>`
   display: flex;
   gap: 1.5rem;
   font-size: 1.2rem;

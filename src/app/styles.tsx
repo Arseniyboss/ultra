@@ -4,18 +4,6 @@ import styled from 'styled-components'
 import { SectionContainer } from '@/components/page-section/styles'
 import { breakpoints } from '@/breakpoints'
 
-export const PageSectionContainer = styled.div`
-  > :nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  @media screen and (max-width: ${breakpoints.home}) {
-    > :nth-child(even) {
-      flex-direction: column;
-    }
-  }
-`
-
 export const PricingSection = styled(SectionContainer)`
   flex-direction: column;
   justify-content: center;
@@ -26,7 +14,7 @@ export const PricingSection = styled(SectionContainer)`
   }
 `
 
-export const CardContainer = styled.div`
+export const CardWrapper = styled.div`
   display: flex;
   justify-content: center;
   gap: 3rem;

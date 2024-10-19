@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
-import { Container, HeaderIconContainer, NavLinks } from './styles'
+import { HeaderContainer, HeaderIconContainer, LinkWrapper } from './styles'
 import navLinks from '@/data/navLinks'
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
     setIsMobileNavOpen(false)
   }
   return (
-    <Container>
+    <HeaderContainer>
       <p>Ultra</p>
       <HeaderIconContainer
         onClick={toggleMobileNav}
@@ -26,7 +26,7 @@ const Header = () => {
         {isMobileNavOpen ? <FaTimes /> : <FaBars />}
       </HeaderIconContainer>
       <nav>
-        <NavLinks $isMobileNavOpen={isMobileNavOpen}>
+        <LinkWrapper $isMobileNavOpen={isMobileNavOpen}>
           {navLinks.map((link) => (
             <li key={link.id}>
               <a href={link.href} onClick={closeMobileNav}>
@@ -34,9 +34,9 @@ const Header = () => {
               </a>
             </li>
           ))}
-        </NavLinks>
+        </LinkWrapper>
       </nav>
-    </Container>
+    </HeaderContainer>
   )
 }
 
