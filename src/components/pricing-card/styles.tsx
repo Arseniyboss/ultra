@@ -13,6 +13,7 @@ export const CardContainer = styled.article`
 
   h2 {
     font-size: 1.7rem;
+    text-transform: capitalize;
   }
 `
 

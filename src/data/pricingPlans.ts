@@ -3,7 +3,7 @@ import { PricingPlan } from '@/types'
 const pricingPlans: PricingPlan[] = [
   {
     id: 1,
-    heading: 'Basic',
+    type: 'basic',
     price: 49.99,
     features: [
       'Logo Design',
@@ -15,7 +15,7 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     id: 2,
-    heading: 'Standard',
+    type: 'standard',
     price: 129.99,
     features: [
       'Web Development',
@@ -27,7 +27,7 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     id: 3,
-    heading: 'Premium',
+    type: 'premium',
     price: 249.99,
     features: [
       'SEO',

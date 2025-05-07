@@ -25,7 +25,7 @@ export type FooterSection = {
 
 export type PricingPlan = {
   id: number
-  heading: string
+  type: 'basic' | 'standard' | 'premium'
   price: number
   features: string[]
 }
