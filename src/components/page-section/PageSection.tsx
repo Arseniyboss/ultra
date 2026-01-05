@@ -10,13 +10,7 @@ const PageSection = ({ id, heading, description, buttonLabel, img }: Props) => {
         <p>{description}</p>
         <Button>{buttonLabel}</Button>
       </SectionDetails>
-      <HeroImage
-        src={img.src}
-        alt=''
-        width={img.width}
-        height={img.height}
-        priority
-      />
+      <HeroImage src={img.src} alt="" width={img.width} height={img.height} preload />
     </SectionContainer>
   )
 }
