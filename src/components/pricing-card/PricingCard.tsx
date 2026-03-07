@@ -1,11 +1,18 @@
+'use client'
+
+import { useGSAP } from '@gsap/react'
 import { FaCheck } from 'react-icons/fa'
+import { animateCard } from '@/utils/animations'
 import { Button } from '@/styles/globals'
 import { CardContainer, PlanPrice, FeatureWrapper, PlanFeature } from './styles'
 import { PricingPlan as Props } from '@/types'
 
 const PricingCard = ({ type, price, features }: Props) => {
+  useGSAP(() => {
+    animateCard()
+  }, [])
   return (
-    <CardContainer>
+    <CardContainer className="card">
       <h2>{type}</h2>
       <PlanPrice>${price} / month</PlanPrice>
       <FeatureWrapper>

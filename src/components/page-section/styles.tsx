@@ -9,6 +9,7 @@ export const SectionContainer = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  opacity: 0;
 
   &:nth-of-type(even) {
     flex-direction: row-reverse;

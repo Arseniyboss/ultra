@@ -10,6 +10,7 @@ export const CardContainer = styled.article`
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   overflow: hidden;
+  opacity: 0;
 
   h2 {
     font-size: 1.7rem;

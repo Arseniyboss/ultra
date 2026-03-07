@@ -1,8 +1,15 @@
+'use client'
+
+import { useGSAP } from '@gsap/react'
 import { PageSection as Props } from '@/types'
+import { animateSection } from '@/utils/animations'
 import { Button } from '@/styles/globals'
 import { SectionContainer, SectionDetails, HeroImage } from './styles'
 
 const PageSection = ({ id, heading, description, buttonLabel, img }: Props) => {
+  useGSAP(() => {
+    animateSection(id)
+  }, [])
   return (
     <SectionContainer id={id} aria-label={`${id} section`}>
       <SectionDetails>

@@ -8,6 +8,7 @@ export const PricingSection = styled(SectionContainer)`
   flex-direction: column;
   justify-content: center;
   gap: var(--spacing);
+  opacity: 1;
 
   h2 {
     font-size: 2rem;
